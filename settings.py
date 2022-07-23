@@ -2,6 +2,7 @@ from os import environ
 
 SESSION_CONFIGS = [
     dict(name='bret', display_name='Bomb Risk Elicitation Task', app_sequence=['bret'], num_demo_participants=3),
+    dict(name='survey', display_name="Encuesta", app_sequence=['survey'], num_demo_participants=3),
 ]
 
 # if you set a property in SESSION_CONFIG_DEFAULTS, it will be inherited by all configs
@@ -24,9 +25,14 @@ LANGUAGE_CODE = 'es'
 REAL_WORLD_CURRENCY_CODE = 'PEN'
 USE_POINTS = True
 
-#ROOMS= [
-    
-#]
+ROOMS= [
+    dict(
+        name='econ101',
+        display_name='Econ 101 class',
+        participant_label_file='_rooms/econ101.txt',
+    ),
+    dict(name='live_demo', display_name='Room for live demo (no participant labels)'),   
+]
 
 ADMIN_USERNAME = 'admin'
 # for security, best to set admin password in an environment variable
