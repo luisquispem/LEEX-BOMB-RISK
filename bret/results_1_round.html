@@ -1,0 +1,36 @@
+    {{ if de }}
+    Sie haben sich entschieden {{ boxes_collected }} von {{ C.NUM_BOXES }} Boxen zu
+    sammeln.
+    {{ else }}
+    Usted eligió en recoger {{ boxes_collected }} de {{ C.NUM_BOXES }} cuadros.
+    {{ endif }}
+
+    <br/>
+    {{ if de }}
+    Die Bombe war hinter der Box in Reihe {{ bomb_row }}, Spalte {{ bomb_col }} versteckt.
+    {{ else }}
+    La bomba se unicó en el cuadro de fila {{ bomb_row }}, columna {{ bomb_col }}.
+    {{ endif }}
+    <br/>
+    <br/>
+    {{ if bomb }}
+        {{ if de }}
+        Die Bombe befand sich unter den von Ihnen gesammelten {{ boxes_collected }}
+        Boxen.<br/> Entsprechend wurden alle Ihre gesammelten Erträge zerstört und
+        Ihre Auszahlung in dieser Aufgabe beträgt {{ payoff }}.
+        {{ else }}
+        La bomba se ecnontró entre sus {{ boxes_collected }} cuadros recogidos.<br/>
+        Por ello, todos sus cuadros fueron destruidos y su pago será de {{ payoff }}.
+        {{ endif }}
+    {{ else }}
+        {{ if de }}
+        Die Bombe war nicht unter den von Ihnen eingesammelten Boxen.<br/>
+        Dementsprechend erhalten Sie {{ box_value }} für jede der {{ boxes_collected }}
+        Boxen, sodass sich Ihre Auszahlung in dieser Aufgabe auf <b>{{ payoff }}</b>
+        beläuft.
+        {{ else }}
+        Sus cuadros recogidos no contienen la bomba.<br/>
+        Entonces, usted recibe {{ box_value }} por cada una de los {{ boxes_collected }} 
+        cuadros que usted eligió, por lo que su pago es de  <b>{{ payoff }}</b>.
+        {{ endif }}
+    {{ endif }}

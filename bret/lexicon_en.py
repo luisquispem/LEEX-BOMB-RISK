@@ -1,0 +1,16 @@
+class Lexicon:
+    bomb_collected = "Bomb collected"
+    boxes_collected = "Número de cuadros recogidos:"
+    boxes_remaining = "Número de cuadros restantes:"
+    boxes_to_collect = "Número de cuadros por recoger:"
+    instructions = "Instrucciones:"
+    no = "No"
+    results = 'Resultados'
+    round_history = "Round history"
+    round_number = "Round no."
+    round_payoff = "Pago por round"
+    solve = "Resolver"
+    start = "Empezar"
+    stop = "Stop"
+    yes = "Sí"
+    your_decision = "Su decisión"
