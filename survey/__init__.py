@@ -18,7 +18,7 @@ class Group(BaseGroup):
 class Player(BasePlayer):
     age = models.IntegerField(label='¿Cuál es su edad?', min=17, max=125)
     gender = models.StringField(
-        choices=[['Masculino', 'Male'], ['Femenino', 'Female'], ['Otro', 'Otro']],
+        choices=[['Male', 'Masculino'], ['Female', 'Femenino'], ['Otro', 'Otro']],
         label='¿Cuál es su género?',
         widget=widgets.RadioSelect,
     )
