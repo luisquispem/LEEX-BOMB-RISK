@@ -54,9 +54,12 @@
 
         {{ if C.RANDOM }}
         <p>
-            En cuanto se inicia la tarea pulsando el botón 'Iniciar',
-            una de las cajas se recoge cada {{ C.TIME_INTERVAL }} segundo(s) al azar.
+            Para iniciar el experimento, tendrá que seleccionar la casilla que desea recoger.
             Una vez recogida, la caja queda marcada con un símbolo de verificación.
+            Usted podrá cambiar de decisión si así lo desea.
+            <!--En cuanto se inicia la tarea pulsando el botón 'Iniciar',
+            una de las cajas se recoge cada {{ C.TIME_INTERVAL }} segundo(s) al azar.
+            Una vez recogida, la caja queda marcada con un símbolo de verificación.-->
             Por cada caja recogida se gana {{ C.BOX_VALUE }}.
         </p>
         {{ else }}

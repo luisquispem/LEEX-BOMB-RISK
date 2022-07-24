@@ -36,7 +36,7 @@ class C(BaseConstants):
     BOX_WIDTH = '50px'
 
     # number of rounds to be played
-    NUM_ROUNDS = 1
+    NUM_ROUNDS = 3
 
     # determines whether all rounds played are payed-off or whether one round is randomly chosen for payment
     # if <random_payoff = True>, one round is randomly determined for payment
@@ -67,7 +67,7 @@ class C(BaseConstants):
     # in case of <dynamic = True>, game play is affected by the variables <time_interval> and <random> below
     # if <dynamic = False>, subjects collect as many boxes as they want by clicking or entering the respective number
     # in case of <dynamic = False>, game play is affected by the variables <random>, <devils_game> and <undoable>
-    DYNAMIC = True
+    DYNAMIC = False
 
     # time interval between single boxes being collected (in seconds)
     # note that this only affects game play if <dynamic = True>
@@ -83,7 +83,7 @@ class C(BaseConstants):
     # if <devils_game = True>, game play is similar to Slovic (1965), i.e. boxes are collected by subjects
     # if <devils_game = False>, subjects enter the number of boxes they want to collect
     # note that this only affects game play if <dynamic = False>
-    DEVILS_GAME = False
+    DEVILS_GAME = True
 
     # determine whether boxes can be toggled only once or as often as clicked
     # if <undoable = True> boxes can be selected and de-selected indefinitely often
