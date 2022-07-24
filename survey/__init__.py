@@ -16,10 +16,10 @@ class Group(BaseGroup):
 
 
 class Player(BasePlayer):
-    age = models.IntegerField(label='What is your age?', min=13, max=125)
+    age = models.IntegerField(label='¿Cuál es su edad?', min=17, max=125)
     gender = models.StringField(
-        choices=[['Male', 'Male'], ['Female', 'Female']],
-        label='What is your gender?',
+        choices=[['Masculino', 'Male'], ['Femenino', 'Female'], ['Otro', 'Otro']],
+        label='¿Cuál es su género?',
         widget=widgets.RadioSelect,
     )
     crt_bat = models.IntegerField(
