@@ -56,4 +56,4 @@ class CognitiveReflectionTest(Page):
     form_fields = ['crt_bat', 'crt_widget', 'crt_lake']
 
 
-page_sequence = [Demographics, CognitiveReflectionTest]
+page_sequence = [Demographics]
